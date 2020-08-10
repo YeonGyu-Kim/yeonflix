@@ -25,6 +25,7 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
+  "homepage": "https://flamboyant-meninsky-543c0f.netlify.com",
   "eslintConfig": {
     "extends": "react-app"
   },
