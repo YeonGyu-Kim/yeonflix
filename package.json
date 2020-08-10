@@ -28,7 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://flamboyant-meninsky-543c0f.netlify.com",
+  "homepage": "https://yeongyu-kim.github.io/yeonflix",
   "browserslist": {
     "production": [
       ">0.2%",
