@@ -143,7 +143,9 @@ const DetailPresenter = ({ result, error, loading }) =>
                 )}
             </Info>
             <Divider>▪</Divider>
-            <Info>{result.vote_average}/10 💖</Info>
+            <Info>
+              {result.vote_average}/10 <span>💖</span>
+            </Info>
             <Divider>▪</Divider>
           </InfoContainer>
           <Summary>{result.overview}</Summary>
