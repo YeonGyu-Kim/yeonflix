@@ -21,14 +21,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://yeongyu-kim.github.io/yeonflix",
+  "homepage": "https://flamboyant-meninsky-543c0f.netlify.com",
   "browserslist": {
     "production": [
       ">0.2%",
