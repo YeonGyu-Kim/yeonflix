@@ -107,7 +107,6 @@ export default function Home() {
           {error && <Message text={error} color="#ec74c3c" />}
         </Container>
       )}
-      ;
     </>
   );
 }
