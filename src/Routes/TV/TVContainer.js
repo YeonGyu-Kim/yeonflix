@@ -43,13 +43,13 @@ export default class extends React.Component {
   render() {
     const { topRated, popular, airingToday, error, loading } = this.state;
     return (
-      <TVPresenter
-        topRated={topRated}
-        popular={popular}
-        airingToday={airingToday}
-        error={error}
-        loading={loading}
-      />
+    <TVPresenter
+      topRated={topRated}
+      popular={popular}
+      airingToday={airingToday}
+      error={error}
+      loading={loading}
+    />
     );
   }
 }

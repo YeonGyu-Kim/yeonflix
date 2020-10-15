@@ -9,6 +9,7 @@ const Container = styled.div`
 
 const Image = styled.div`
   background-image: url(${(props) => props.bgUrl});
+  width:100%;
   height: 180px;
   background-size: cover;
   border-radius: 4px;
@@ -28,8 +29,10 @@ const ImageContainer = styled.div`
   position: relative;
   margin-bottom: 5px;
   &:hover {
+    
     ${Image} {
       opacity: 0.3;
+      
     }
     ${Rating} {
       opacity: 1;
