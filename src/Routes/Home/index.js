@@ -17,6 +17,8 @@ export default function Home() {
   const [nowPlaying, setNowPlaying] = useState([]);
   const [upComing, setUpComing] = useState([]);
   const [popular, setPopular] = useState([]);
+
+  const result = undefined | null;
   async function getHome() {
     try {
       const {
@@ -58,7 +60,7 @@ export default function Home() {
           </Helmet>
           {nowPlaying && nowPlaying.length > 0 && (
             <Section
-              title="Now Playing"
+              title='Now Playing'
               children={nowPlaying.map((movie) => (
                 <Poster
                   key={movie.id}
@@ -74,7 +76,7 @@ export default function Home() {
           )}
           {popular && popular.length > 0 && (
             <Section
-              title="Popular Movies"
+              title='Popular Movies'
               children={popular.map((movie) => (
                 <Poster
                   key={movie.id}
@@ -82,7 +84,9 @@ export default function Home() {
                   imageUrl={movie.poster_path}
                   title={movie.original_title}
                   rating={movie.vote_average}
-                  year={movie.release_date.substring(0, 4)}
+                  year={
+                    movie.release_date ? movie.release_date.substring(0, 4) : ""
+                  }
                   isMovie={true}
                 />
               ))}
@@ -90,7 +94,7 @@ export default function Home() {
           )}
           {upComing && upComing.length > 0 && (
             <Section
-              title="Upcoming Movies"
+              title='Upcoming Movies'
               children={upComing.map((movie) => (
                 <Poster
                   key={movie.id}
@@ -104,7 +108,7 @@ export default function Home() {
               ))}
             />
           )}
-          {error && <Message text={error} color="#ec74c3c" />}
+          {error && <Message text={error} color='#ec74c3c' />}
         </Container>
       )}
     </>
